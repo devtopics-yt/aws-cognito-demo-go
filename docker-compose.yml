@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      PORT: 8080
+      AWS_ACCESS_KEY_ID: AKIsomething
+      AWS_SECRET_ACCESS_KEY: GolOsomething
+      AWS_DEFAULT_REGION: us-west-your-region
+      COGNITO_APP_CLIENT_ID: 79rtsomething
+      COGNITO_USER_POOL_ID: us-west-1_yourpool
